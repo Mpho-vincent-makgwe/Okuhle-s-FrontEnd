@@ -4,33 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <!-- Link to CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
+    <!-- Include the Navbar component -->
+    {% include 'components/nav/navbar.html' %}
+
     <div class="dashboard-container">
-                        <button id="theme-toggle">Toggle Dark/Light Mode</button>
+        
         <div class="background-vid">
-            <!-- Video element -->
             <video autoplay muted loop id="background-video">
                 <source src="{{ url_for('static', filename='videos/3121459-sd_640_360_24fps.mp4') }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            
-
-            <!-- Text header -->
             <header>
                 <h1>Sensor Dashboard</h1>
             </header>
-            
         </div>
-        
+
         <main>
             <div class="sensor-data">
                 <h2>Sensor Data</h2>
-                <div class="logo-container">
-                    <img src="{{ url_for('static', filename='images/Background-dashboard.jpeg') }}" alt="Company Logo" class="company-logo">
-                </div>
                 <ul>
                     <li id="temperature">Temperature: {{ sensor_data.temperature }} °C</li>
                     <li id="gas-level">Gas Level: {{ sensor_data.gas_level }}</li>
@@ -47,7 +41,7 @@
         </main>
 
         <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-        
+        <!-- <script src="{{ url_for('static', filename='js/navbar.js') }}"></script> -->
     </div>
 </body>
 </html>

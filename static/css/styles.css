@@ -1,3 +1,6 @@
+/*styles*/
+
+
 /* Video as background */
 .background-vid {
     position: relative;
@@ -22,7 +25,7 @@
 /* Ensure the header text is readable over the video */
 /* Styling for the header text */
 .background-vid header h1 {
-    color: #fff; /* White text */
+    color: #260028; /* White text */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for readability */
     z-index: 1;
     position: relative;
@@ -31,26 +34,9 @@
     margin-bottom: 10px; /* Space between the header and logo */
 }
 
-/* Styling for the logo container */
-.logo-container img {
-    display: block;
-    margin: 0 auto; /* Center the logo */
-    max-width: 150px; /* Logo size */
-    height: auto;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow similar to header */
-}
-
-/* Different colors for logo styling */
-.logo-container img {
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7)); /* Logo shadow */
-    border: 3px solid #ffcc00; /* Yellow border for contrast */
-    border-radius: 10px; /* Rounded corners */
-}
-
-
 .sensor-data h2 {
     text-align: center;
-    color: #333;
+    color: #260028;
 }
 
 .sensor-data ul {
@@ -73,30 +59,3 @@
 
 
 
-/* Default Light Mode */
-body {
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-/* Dark Mode */
-body.dark-mode {
-    background-color: #121212;
-    color: #fff;
-}
-
-body.dark-mode .dashboard-container {
-    background: rgba(50, 50, 50, 0.9);
-}
-
-body.dark-mode .sensor-data h2 {
-    color: #ddd;
-}
-
-body.dark-mode .alert {
-    color: #ff8080;
-}
-
-body.dark-mode .background-vid header h1 {
-    color: #ffcc00; /* Yellow text for contrast in Dark Mode */
-}
