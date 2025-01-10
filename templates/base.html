@@ -3,32 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <!-- <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .dashboard-section {
-            margin-bottom: 20px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        p {
-            color: #555;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 5px 0;
-        }
-    </style> -->
+    <title>{% block title %}Base{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-        <!-- Include the Navbar component -->
+    <!-- Include the Navbar component -->
     {% include 'components/nav/navbar.html' %}
-    {% block content %}{% endblock %}
+    
+    <!-- Main Content Block -->
+    <div class="main-container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

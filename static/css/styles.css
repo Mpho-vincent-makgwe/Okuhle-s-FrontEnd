@@ -11,6 +11,11 @@
     overflow: hidden;
 }
 
+.main-container {
+    margin-top: calc(3px + 0.5rem); /* Adjust as needed */
+    padding: 1rem; /* Optional for better spacing */
+}
+
 /* Style for the video */
 #background-video {
     position: absolute;
