@@ -18,9 +18,9 @@
         </a>
         <button id="theme-toggle" class="theme-toggle-btn">Toggle Dark/Light Mode</button> <!-- Theme Toggle Button -->
         <ul class="navbar-menu">
-            <li><a href="#" class="navbar-item" id="about-nav">About</a></li>
-            <li><a href="#" class="navbar-item" id="service-nav">Services</a></li>
-            <li><a href="#" class="navbar-item" id="contact-nav">Contact</a></li>
+            <li><a href="{{ url_for('analytics') }}" class="navbar-item" id="analytics-nav">Analytics</a></li>
+            <li><a href="{{ url_for('training') }}" class="navbar-item" id="training-nav">Vr Training</a></li>
+            <li><a href="{{ url_for('monitoring') }}" class="navbar-item" id="monitoring-nav">Monitoring</a></li>
         </ul>
         
     </div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <style>
+    <!-- <style>
         body {
             font-family: Arial, sans-serif;
         }
@@ -24,9 +24,11 @@
         li {
             margin: 5px 0;
         }
-    </style>
+    </style> -->
 </head>
 <body>
+        <!-- Include the Navbar component -->
+    {% include 'components/nav/navbar.html' %}
     {% block content %}{% endblock %}
 </body>
 </html>
